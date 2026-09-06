@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .hero {
+    padding: 130px 0 50px;
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .about-section .row,
+  .contact-section .row {
+    text-align: center;
+  }
+}

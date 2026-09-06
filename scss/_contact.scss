@@ -1,0 +1,21 @@
+.contact-info-item {
+  margin-bottom: 20px;
+
+  h5 {
+    margin-bottom: 5px;
+  }
+
+  p {
+    color: $gray-color;
+  }
+}
+
+.form-control {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid $gray-color;
+}
+
+.map-section {
+  line-height: 0;
+}

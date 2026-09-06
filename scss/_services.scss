@@ -1,0 +1,25 @@
+.service-card {
+  background: $white;
+  border: 1px solid $light-bg;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  @include hover-move;
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: $gray-color;
+  }
+}
+
+.why-us-section {
+  padding: 80px 0;
+  background-color: $dark-color;
+
+  h2, p {
+    color: $white;
+  }
+}
