@@ -1,0 +1,13 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hover-move {
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
