@@ -32,3 +32,10 @@ a {
   font-weight: 700;
   @include hover-move;
 }
+.text-center {
+  margin-bottom: 50px;
+
+  h2 {
+    margin-top: 10px;
+  }
+}
