@@ -10,223 +10,303 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Marketing</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- hero section -->
-  <section class="hero">
+  <!-- NAVBAR - შუაში, Pages dropdown-ით -->
+ <header>
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <span class="section-title">digital</span>
-          <h1>Marketing made meaningful</h1>
-          <p>It is long established fact that reader distracted the readable content of a page when looking at its layout.</p>
-          <a href="contact.html" class="btn-main">Find Out More</a>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/slider-01.png" alt="marketing hero image" class="img-fluid">
-        </div>
+      <a class="navbar-brand fw-bold" href="index.html">M<span>arketing</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="btn-contact">Contact</a>
+    </div>
+  </nav>
+</header>
+  <!-- HERO - Bootstrap Carousel (2 სლაიდი) -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <section class="hero-slide">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 animate-left">
+                <span class="section-title">digital</span>
+                <h1>Marketing Made Meaningful</h1>
+                <p>It is long established fact that reader distracted the readable content of a page when looking at its layout.</p>
+                <a href="contact.html" class="btn-main">Find Out More</a>
+              </div>
+              <div class="col-lg-6 text-center">
+                <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/slider-01.png" alt="marketer at work" class="hero-img">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="carousel-item">
+        <section class="hero-slide">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 animate-left">
+                <span class="section-title">digital</span>
+                <h1>Marketing That Moves People</h1>
+                <p>It is long established fact that reader distracted the readable content of a page when looking at its layout.</p>
+                <a href="contact.html" class="btn-main">Find Out More</a>
+              </div>
+              <div class="col-lg-6 text-center">
+                <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/slider-02.png" alt="marketer with documents" class="hero-img">
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- about section -->
+  <!-- ABOUT (hover-moving photo + need custom box) -->
   <section class="about-section">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/about-1.jpg" alt="about our company" class="img-fluid">
+        <div class="col-lg-6 about-img-wrap">
+          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/about-1.jpg" alt="team collaborating" class="img-fluid rounded">
         </div>
         <div class="col-lg-6">
           <span class="section-title">about us</span>
-          <h2>Marketing is the art of influence</h2>
+          <h2>Marketing Is The Art Of Influence</h2>
           <p>It is long established fact that reader distracted the readable content of a page when looking at its layout.</p>
-          <ul class="check-list">
-            <li>Marketing professional</li>
-            <li>Help businesses increase</li>
-            <li>Latest technologies</li>
-            <li>Measurable results</li>
-          </ul>
-          <a href="about.html" class="btn-main">Learn More</a>
+
+          <div class="need-custom-box row align-items-center">
+            <div class="col-md-6">
+              <h4>Need Custom?</h4>
+              <p>we completed 85% success project in business</p>
+              <a href="contact.html" class="btn-main">Learn More</a>
+            </div>
+            <div class="col-md-6">
+              <ul class="check-list">
+                <li>Marketing Professional</li>
+                <li>Help Businesses Increase</li>
+                <li>Latest Technologies</li>
+                <li>Measurable Results</li>
+              </ul>
+              <p><span class="live-chat-icon">💬</span> <strong>Live Chat</strong><br>Connect With Us</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- services section -->
+  <!-- SERVICES (border stays, bg fills, read more animates) -->
   <section class="services-section">
     <div class="container">
       <div class="text-center">
         <span class="section-title">our service</span>
         <h2>Our Marketing Service</h2>
       </div>
-      <div class="row">
+      <div class="row g-4">
         <div class="col-md-4">
           <div class="service-card">
             <h4>Digital Strategies</h4>
             <p>It established reader distracted read content page looking its layout.</p>
+            <a href="#" class="read-more-link">Read More</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card">
             <h4>Digital Management</h4>
             <p>It established reader distracted read content page looking its layout.</p>
+            <a href="#" class="read-more-link">Read More</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card">
             <h4>Digital Storage</h4>
             <p>It established reader distracted read content page looking its layout.</p>
+            <a href="#" class="read-more-link">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- counters -->
+  <!-- COUNTERS + CIRCLE MENU -->
   <section class="counters">
     <div class="container">
       <div class="row text-center">
-        <div class="col-6 col-md-3">
-          <h2>1200+</h2>
-          <p>Happy Clients</p>
+        <div class="col-6 col-md-3"><h2>89%</h2><p>Improving Brand</p></div>
+        <div class="col-6 col-md-3"><h2>85%</h2><p>Getting Traffic</p></div>
+        <div class="col-6 col-md-3"><h2>86%</h2><p>Target Relevance</p></div>
+        <div class="col-6 col-md-3"><h2>87%</h2><p>Increase Trust</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ecommerce-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="circle-menu">
+            <div class="circle-icon-wrap">
+              <div class="circle-icon" style="top: 0; left: 45%;">🚀</div>
+              <div class="circle-icon" style="top: 45%; left: 0;">🌐</div>
+              <div class="circle-icon" style="top: 45%; right: 0;">💻</div>
+              <div class="circle-icon" style="bottom: 0; left: 30%;">📢</div>
+              <div class="circle-icon" style="bottom: 0; right: 30%;">🔍</div>
+              <div class="circle-icon" style="top: 15%; right: 10%;">⚙️</div>
+            </div>
+            <div class="circle-center-text">
+              <h4>Ecommerce Seo</h4>
+              <p>It is a long established fact that reader page when looking at its layout.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-md-3">
-          <h2>10+</h2>
-          <p>Years of Experience</p>
-        </div>
-        <div class="col-6 col-md-3">
-          <h2>23+</h2>
-          <p>SEO Winners</p>
-        </div>
-        <div class="col-6 col-md-3">
-          <h2>156+</h2>
-          <p>Finished Projects</p>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-6"><h2>1,200+</h2><p class="section-title">Happy Clients</p></div>
+            <div class="col-6"><h2>10+</h2><p class="section-title">Years Of Experience</p></div>
+            <div class="col-6"><h2>23+</h2><p class="section-title">Seo Winners</p></div>
+            <div class="col-6"><h2>156+</h2><p class="section-title">Finished Projects</p></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- team -->
+  <!-- TEAM (photo darkens on hover) -->
   <section class="team-section">
     <div class="container">
-      <div class="text-center">
-        <span class="section-title">our team</span>
-        <h2>Team Members</h2>
-      </div>
-      <div class="row">
+      <span class="section-title">our team</span>
+      <h2>Team Members</h2>
+      <div class="row g-4">
         <div class="col-md-3 col-6">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-5.jpg" alt="Lucas T" class="img-fluid">
-          <h5>Lucas T.</h5>
-          <p>Digital Marketer</p>
+          <div class="team-card">
+            <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-5.jpg" alt="Lucas T., digital marketer">
+            <div class="team-info"><h5>Lucas T.</h5><p>Digital Marketer</p></div>
+          </div>
         </div>
         <div class="col-md-3 col-6">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-2.jpg" alt="Amelia S" class="img-fluid">
-          <h5>Amelia S.</h5>
-          <p>Social Media Marketer</p>
+          <div class="team-card">
+            <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-2.jpg" alt="Amelia S., social media marketer">
+            <div class="team-info"><h5>Amelia S.</h5><p>Social Media Marketer</p></div>
+          </div>
         </div>
         <div class="col-md-3 col-6">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-3.jpg" alt="Daniel R" class="img-fluid">
-          <h5>Daniel R.</h5>
-          <p>Social Media Marketer</p>
+          <div class="team-card">
+            <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-3.jpg" alt="Daniel R., social media marketer">
+            <div class="team-info"><h5>Daniel R.</h5><p>Social Media Marketer</p></div>
+          </div>
         </div>
         <div class="col-md-3 col-6">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-7.jpg" alt="Ethan H" class="img-fluid">
-          <h5>Ethan H.</h5>
-          <p>Digital Marketer</p>
+          <div class="team-card">
+            <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/team-7.jpg" alt="Ethan H., digital marketer">
+            <div class="team-info"><h5>Ethan H.</h5><p>Digital Marketer</p></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- testimonials -->
+  <!-- TESTIMONIALS -->
   <section class="testimonials-section">
     <div class="container">
-      <div class="text-center">
-        <span class="section-title">our testimonial</span>
-        <h2>Customer Says</h2>
-      </div>
-      <div class="row">
+      <span class="section-title">our testimonial</span>
+      <h2>Customer Says</h2>
+      <div class="row g-4">
         <div class="col-md-4">
           <div class="testimonial-card">
-            <p>"It established reader distracted readable content page looking at its layout."</p>
-            <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/testi-1.jpg" alt="Ethan Harrison">
-            <h6>Ethan Harrison</h6>
-            <small>New York</small>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"It established reader distracted readable content page looking at its layout."</p>
             <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/testi-2.jpg" alt="Lily Harrison">
-            <h6>Lily Harrison</h6>
-            <small>New York</small>
+            <p>"It established reader distracted readable content page looking at its layout."</p>
+            <h6>Lily Harrison</h6><small>New York</small>
           </div>
         </div>
         <div class="col-md-4">
           <div class="testimonial-card">
-            <p>"It established reader distracted readable content page looking at its layout."</p>
             <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/testi-3.jpg" alt="James Carter">
-            <h6>James Carter</h6>
-            <small>New York</small>
+            <p>"It established reader distracted readable content page looking at its layout."</p>
+            <h6>James Carter</h6><small>New York</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/testi-1.jpg" alt="Ethan Harrison">
+            <p>"It established reader distracted readable content page looking at its layout."</p>
+            <h6>Ethan Harrison</h6><small>New York</small>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- blog preview -->
+  <!-- BLOG -->
   <section class="blog-section">
     <div class="container">
-      <div class="text-center">
-        <span class="section-title">our blog</span>
-        <h2>Latest Trends</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/blog-05.jpg" alt="blog post" class="img-fluid">
-          <h5>Marketing that moves brands forward</h5>
-          <small>January 9, 2026</small>
+      <span class="section-title">our blog</span>
+      <h2>Latest Trends</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/blog-05.jpg" alt="marketing team working" class="img-fluid">
         </div>
-        <div class="col-md-4">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/blog-4-1.jpg" alt="blog post" class="img-fluid">
-          <h5>Marketing built for the digital age</h5>
-          <small>January 9, 2026</small>
-        </div>
-        <div class="col-md-4">
-          <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/blog-3-1.jpg" alt="blog post" class="img-fluid">
-          <h5>Because your brand deserves attention</h5>
-          <small>January 9, 2026</small>
+        <div class="col-md-6">
+          <div class="row g-4">
+            <div class="col-12 d-flex gap-3">
+              <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/blog-4-1.jpg" alt="digital design work" width="120">
+              <div>
+                <small>January 9, 2026</small>
+                <h5>Marketing That Moves Brands Forward</h5>
+                <a href="#" class="read-more-link">Read More</a>
+              </div>
+            </div>
+            <div class="col-12 d-flex gap-3">
+              <img src="https://themes.webswaala.com/CMS/WW179/wp-content/uploads/2026/01/blog-3-1.jpg" alt="brand attention design" width="120">
+              <div>
+                <small>January 9, 2026</small>
+                <h5>Because Your Brand Deserves Attention</h5>
+                <a href="#" class="read-more-link">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Marketing</h4>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <h4>M<span style="color:#23997D">arketing</span></h4>
           <p>It long established reader distracted readable content page when looking at its layout.</p>
         </div>
-        <div class="col-md-6 text-md-end">
-          <p>&copy; 2026 - All Rights Reserved</p>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="services.html">Blog</a></p>
+        </div>
+        <div class="col-md-3">
+          <h5>Solutions</h5>
+          <p><a href="#">Marketing Strategy</a></p>
+          <p><a href="#">Advertising</a></p>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <p>80423 Johnston Ports, North Broderick, AK 26155</p>
+          <p>+1 325 659 4632</p>
         </div>
       </div>
     </div>

@@ -1,20 +1,50 @@
 .navbar {
-  background-color: $white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: $bg-darker;
+  padding: 20px 0;
 
   .navbar-brand {
-    color: $dark-color;
-    font-size: 24px;
-  }
+    color: $text-light;
+    font-size: 22px;
 
-  .nav-link {
-    color: $dark-color;
-    font-weight: 600;
-    margin-left: 20px;
-
-    &:hover,
-    &.active {
+    span {
       color: $main-color;
     }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $text-light;
+      font-weight: 600;
+      margin: 0 15px;
+
+      &:hover,
+      &.active {
+        color: $main-color;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: $bg-darker;
+      border: none;
+
+      .dropdown-item {
+        color: $text-light;
+
+        &:hover {
+          background-color: $main-color;
+          color: $text-light;
+        }
+      }
+    }
+  }
+
+  .btn-contact {
+    background-color: $text-light;
+    color: $main-color;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
   }
 }
